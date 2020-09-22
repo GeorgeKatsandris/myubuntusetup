@@ -39,3 +39,8 @@ miktex \
 meld \
 neofetch \
 lutris
+
+sudo snap install -y \
+caprine \
+retroarch \
+autotrash-unofficial
