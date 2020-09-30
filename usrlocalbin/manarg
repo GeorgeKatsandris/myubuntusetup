@@ -1,0 +1,8 @@
+#!/bin/bash
+line=$(man $1 | egrep -m 1 -ne "^[[:space:]]+$2")
+
+#firstlinenum=$(echo $line | cut -d : -f 1)
+#lastlineoffset=$(man $1 | sed -n $firstlinenum,\$p | egrep -m 1 -ne "^\$" | cut -d : -f 1)
+#((test=$firstlinenum+$lastlineoffset-2))
+#man $1 | sed -n $firstlinenum,"$test"p
+echo $line

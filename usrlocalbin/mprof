@@ -1,0 +1,25 @@
+#!/bin/bash
+
+case "$1" in
+default)
+	sudo ratbagctl "Logitech Gaming Mouse G402" button 0 action set button 1
+	sudo ratbagctl "Logitech Gaming Mouse G402" button 1 action set button 2
+	sudo ratbagctl "Logitech Gaming Mouse G402" button 2 action set button 3
+	sudo ratbagctl "Logitech Gaming Mouse G402" button 3 action set special unknown
+	sudo ratbagctl "Logitech Gaming Mouse G402" button 4 action set special unknown
+	sudo ratbagctl "Logitech Gaming Mouse G402" button 5 action set special unknown
+	sudo ratbagctl "Logitech Gaming Mouse G402" button 6 action set special unknown
+	sudo ratbagctl "Logitech Gaming Mouse G402" button 7 action set special unknown
+	;;
+
+lotro)
+	sudo ratbagctl "Logitech Gaming Mouse G402" button 0 action set button 1
+	sudo ratbagctl "Logitech Gaming Mouse G402" button 1 action set button 2
+	sudo ratbagctl "Logitech Gaming Mouse G402" button 2 action set macro KEY_EQUAL
+	sudo ratbagctl "Logitech Gaming Mouse G402" button 3 action set macro +KEY_LEFTSHIFT KEY_PAUSE -KEY_LEFTSHIFT
+	sudo ratbagctl "Logitech Gaming Mouse G402" button 4 action set macro +KEY_LEFTALT KEY_PAUSE -KEY_LEFTALT
+	sudo ratbagctl "Logitech Gaming Mouse G402" button 5 action set macro +KEY_LEFTCTRL KEY_PAUSE -KEY_LEFTCTRL
+	sudo ratbagctl "Logitech Gaming Mouse G402" button 6 action set macro KEY_MINUS
+	sudo ratbagctl "Logitech Gaming Mouse G402" button 7 action set macro KEY_0
+	;;
+esac

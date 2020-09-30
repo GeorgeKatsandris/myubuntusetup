@@ -72,4 +72,5 @@ sudo apt install -y ratbagd piper
 sudo snap install -y \
 caprine \
 retroarch \
-autotrash-unofficial
+autotrash-unofficial \
+losslesscut
