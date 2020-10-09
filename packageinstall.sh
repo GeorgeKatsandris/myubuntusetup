@@ -27,10 +27,9 @@ paprefs \
 pavucontrol \
 gnome-shell-extensions \
 alacarte \
-sublime-text \
 unrar \
 qjoypad \
-adobe-flashplugin \
+flashplugin-installer \
 checkinstall \
 p7zip \
 openssh-server \
@@ -45,7 +44,7 @@ progress \
 vim \
 meld \
 neofetch \
-shotcut \
+shotcut
 
 #other repo packages
 sudo apt install -y gnupg ca-certificates
@@ -81,8 +80,7 @@ sudo apt update
 sudo apt install woeusb
 
 #snap packages
-sudo snap install -y \
+sudo snap install \
 caprine \
 retroarch \
-autotrash-unofficial \
 losslesscut
