@@ -44,7 +44,9 @@ progress \
 vim \
 meld \
 neofetch \
-shotcut
+shotcut \
+gstreamer1.0-libav \
+ffmpeg
 
 #other repo packages
 sudo apt install -y gnupg ca-certificates
